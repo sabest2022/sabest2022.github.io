@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,500&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            height: 50vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20rem;
+            height: 20rem;
+            background-color: bisque;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30rem;
+            height: 30rem;
+            background-color: rgb(65, 63, 60);
+            flex-direction: column;
+        }
+
+        .form-welcome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25rem;
+            height: 10rem;
+            color: white;
+            background-color: rgb(76, 51, 241);
+            flex-direction: column;
+        }
+
+        .form-hidden {
+            display: none;
+        }
+
+        .form {
+            display: inline;
+        }
+
+        #createAccount {
+            background-color: aqua;
+        }
+
+        header {
+            width: 100%;
+            height: 2rem;
+            position: fixed;
+            top: 0%;
+            left: 1rem;
+        }
+
+        .Btnback {
+            padding: .3rem;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="form-hidden" id="head"><span id="showUser"> </span> loged in!</header>
+        <div id="login" class="">
+            <input type="text" class="userIn form__input form" autofocus placeholder="username"> </input>
+            <input type="password" class="passwordIn form__input form" placeholder="Password"> </input>
+            <button class="Btn form" id="openBtn" type="submit"> sign in</button>
+            <p class="form-hidden" Id=" error_message"> Username and password must </p>
+            <p class="form-hidden" Id=" signup"> you should sign up! </p>
+            <p class="form-hidden" Id=" welcome"> you are in loged, welcomew! </p>
+        </div>
+        <div class=" form-hidden" id="createAccount">
+            <input type="text" class="newuserIn form__input form" id="signupUser" autofocus placeholder="username">
+            </input>
+            <input type="password" class="newpasswordIn form__input form" id="signupPass" placeholder="Password">
+            </input>
+            <button class="Btn form" id="regBtn" type="submit"> sign up</button>
+            <p Id="signup"> you should sign up! </p>
+            <p class="form-hidden" id="user_error-message">username unavailable, chose another one!</p>
+        </div>
+        <div class="form-welcome form-hidden" id="welcome-page">
+            <h1>Welcome to Sabest AB.!</h1>
+            <button class="Btnback" id="backBtn" type="submit"> logout and back to sign in page</button>
+        </div>
+
+    </div>
+
+
+    <script src="./src/script.js"></script>
+</body>
+
+
+
+</html>
