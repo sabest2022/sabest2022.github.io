@@ -36,7 +36,18 @@
 // });
 
 
-
+document.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("mylist")) {
+           localStorage.setItem("mylist", JSON.stringify([{
+              User: "" , Pass:"",}]));
+       }
+const localis = JSON.parae(localStorage.getItem("mylist"));
+for (let i=0; i< localis.length; i++){
+if(username.value === localis[i].User){
+welcomePage();
+return
+}}
+});
 
 const myData = [{
     User: "fredrik" , Pass:"1234",
