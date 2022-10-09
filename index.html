@@ -12,9 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./src/main.css">
     <title>Document</title>
-    <style>
 
-    </style>
 </head>
 
 <body>
@@ -23,7 +21,7 @@
         <div id="login" class="">
             <input type="text" class="userIn form__input form" autofocus placeholder="username"> </input>
             <input type="password" class="passwordIn form__input form" placeholder="Password"> </input>
-            <button class="Btn form" id="openBtn" type="submit"> sign in</button>
+            <button class="Btn form form__button" id="openBtn" type="submit"> sign in</button>
             <p class="form-hidden" Id=" error_message"> Username and password must </p>
             <p class="form-hidden" Id=" signup"> you should sign up! </p>
             <p class="form-hidden" Id=" welcome"> you are in loged, welcomew! </p>
@@ -33,13 +31,13 @@
             </input>
             <input type="password" class="newpasswordIn form__input form" id="signupPass" placeholder="Password">
             </input>
-            <button class="Btn form" id="regBtn" type="submit"> sign up</button>
+            <button class="Btn form form__button" id="regBtn" type="submit"> sign up</button>
             <p Id="signup"> you should sign up! </p>
             <p class="form-hidden" id="user_error-message">username unavailable, chose another one!</p>
         </div>
         <div class="form-welcome form-hidden" id="welcome-page">
             <h1>Welcome to Sabest AB.!</h1>
-            <button class="Btnback" id="backBtn" type="submit"> logout and back to sign in page</button>
+            <button class="Btnback form__button" id="backBtn" type="submit"> logout and back to sign in page</button>
         </div>
 
     </div>
