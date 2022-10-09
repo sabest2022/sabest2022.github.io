@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e47a50b6887878943ff83d1f98920ef135e289d
 //this first code check upon page loading if user was loged in before so go directly to welcome page
 document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("mylist")) {
@@ -52,6 +55,7 @@ function cheackCode() {
     for (let i = 0; i < myData.length; i++) {
         if (myData[i].User === username.value && myData[i].Pass === pass.value) {
             registered();
+<<<<<<< HEAD
             return;
         }
     }
@@ -61,10 +65,32 @@ function cheackCode() {
     for (let i = 0; i < locallist.length; i++) {
         if (locallist[i].User === username.value && pass.value != "") {
             registered();
+=======
+
+            return;
+        }
+    }
+    if (!localStorage.getItem("mylist")) {
+        localStorage.setItem("mylist", JSON.stringify([{
+            User: "", Pass: "",
+        }]));
+    }
+    let locallist = JSON.parse(localStorage.getItem('mylist'));
+    console.log(locallist);
+
+    for (let i = 0; i < locallist.length; i++) {
+        if (locallist[i].User === username.value && pass.value != "") {
+            registered();
+
+>>>>>>> 5e47a50b6887878943ff83d1f98920ef135e289d
             return;
         }
     }
 
+<<<<<<< HEAD
+=======
+    reset();
+>>>>>>> 5e47a50b6887878943ff83d1f98920ef135e289d
     console.log("cheackCode2")
     signup();
 }
@@ -85,7 +111,11 @@ function logout() {
 //this code should go into checkcode funtion and then check both together: whether user name and pass is in database or in localStorage 
 // it may be okey to use include
 function registered() {
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 5e47a50b6887878943ff83d1f98920ef135e289d
 
     let locallist = JSON.parse(localStorage.getItem('mylist'));
 
@@ -176,4 +206,8 @@ function reset() {
         inputElement.value = "";
     });
 }
+<<<<<<< HEAD
     // document.load/signup page setting
+=======
+    // document.load/signup page setting
+>>>>>>> 5e47a50b6887878943ff83d1f98920ef135e289d
