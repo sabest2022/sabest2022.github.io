@@ -1,41 +1,14 @@
-
-
-// var newList = [
-//     {Username:"hamid",
-//     password:"123",
-//     },
-//     {   Username:"vahid",
-//         password:"1234",
-//     },
-//     {   Username:"ali",
-//     password:"123",
-// }];
-
-// let datalist = [{Username:""},];
-//    for (let i = 0; i < newList.length; i++) {
-//         datalist.push(newList[i].Username);
-//      }
-
-//      localStorage.setItem("my list", JSON.stringify(datalist));
-
-// console.log(newList);
-// // document.addEventListener("DOMContentLoaded", () => {
-//     // localStorage.getItem("name");
-//     const signinButton = document.getElementById("Btn");
-//     signinButton.addEventListener("click" , e => {
-    
-//     const inputUser = document.querySelector(".userIn").value;
-//     const inputPassword = document.querySelector(".passwordIn").value;
-    
-//     datalist = datalist.concat(  inputUser );
-    
-      
-//         console.log(datalist);
-//     localStorage.setItem("my list", JSON.stringify(datalist));
-   
-// });
-
-
+document.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("mylist")) {
+           localStorage.setItem("mylist", JSON.stringify([{
+              User: " " }]));
+       }
+const localis = JSON.parae(localStorage.getItem("mylist"))
+for (let i=0; i<localis.length; i++){
+if(username.value === localis[i].User){
+welcomePage();
+return
+}}});
 
 
 const myData = [{
