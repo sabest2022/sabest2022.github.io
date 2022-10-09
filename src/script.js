@@ -1,14 +1,20 @@
+
+
+//this first code check upon page loading if user was loged in before so go directly to welcome page
 document.addEventListener("DOMContentLoaded", () => {
-    if (!localStorage.getItem("mylist")) {
-           localStorage.setItem("mylist", JSON.stringify([{
-              User: " " }]));
-       }
-const localis = JSON.parae(localStorage.getItem("mylist"))
+    if (localStorage.getItem("mylist")){ 
+const localis = JSON.parse(localStorage.getItem("mylist"))
 for (let i=0; i<localis.length; i++){
-if(username.value === localis[i].User){
+    for (let l=0 ; l<myData.length; l++){
+        if(myData[i].User === localis[i].User){
+    // if the list with name "mylist" does not exist in localStorage, it make a list for stor User names
 welcomePage();
 return
-}}});
+}}}}if (!localStorage.getItem("mylist")) {
+    localStorage.setItem("mylist", JSON.stringify([{
+       User: " " }]));}
+});
+
 
 
 const myData = [{
