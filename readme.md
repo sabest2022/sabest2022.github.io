@@ -4,7 +4,9 @@ User: "fredrik", Pass: "1234",
 
 User: "saeed", Pass: "bey"
 
-User: "hamed", Pass: "2345"
+User: "hamed", Pass: "2345"'
+
+man stannar inlogad när man refresha sidan
 
 man kan också skapa nya användare på localStoarage
 
